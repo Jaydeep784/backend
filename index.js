@@ -5,7 +5,7 @@ const userRoute = require('./routes/User');
 const cors = require("cors");
 const app = express();
 app.use(cors({
-    origin : [''],
+    origin : ['https://frontend-black-kappa-22.vercel.app'],
     methods : ['GET', 'POST'],
     credentials : true
 }));
