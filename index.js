@@ -4,8 +4,12 @@ const productRoute = require('./routes/Product');
 const userRoute = require('./routes/User');
 const cors = require("cors");
 const app = express();
-app.use(cors());
-const PORT = 3001;
+app.use(cors({
+    origin : ['https://marketplace-client-nu.vercel.app'],
+    methods : ['GET', 'POST'],
+    credentials : true
+}));
+const PORT = process.env.PORT || 3001;
 
 // jIzY5YNhlxFtFxoj
 // mongodb+srv://jaydeepjadhav784:jIzY5YNhlxFtFxoj@cluster0.72qwz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
