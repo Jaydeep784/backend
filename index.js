@@ -6,7 +6,7 @@ const cors = require("cors");
 const app = express();
 // app.use(cors());
 app.use(cors({
-    origin : ['https://frontend-black-kappa-22.vercel.app', 'http://localhost:5173'],
+    origin : ['https://frontend-black-kappa-22.vercel.app'],
     methods : ['GET', 'POST'],
     credentials : true
 }));
